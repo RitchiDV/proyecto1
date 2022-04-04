@@ -1,0 +1,56 @@
+esta es la historia de ricardo Diaz 1998 -2022
+cat historia.txt : te enseña en el comando lo que contiene el archivo
+aprendiendo git  y comandos como : 
+git show historia.txt : veo el historial de los comandos y su historial
+git log historia.txt : veo las actualizaciones como historial.
+git init : se crea un repositorio
+git add .
+git commit historia .txt : se borra del commit o del add. 
+git commit -m "abcd" : con este commit agregas un comentario (importante)
+cd .. cd .
+git rm --cached historia.txt (importante)
+git status : veo lo que no esta en commit y lo añadido  (importante)
+git branch: cabecera <----- es para crear una rama
+git branch  te arroja todas las ramas que tienes creadas.
+git checkaut : cabecera : <----- es para entrar en la rama cabecera 
+git merge cabecera -m "comentario" : esta funcion fuciona a la rama creada
+con la rama master
+----------------------------------
+git remote add origin https://github.com/RitchiDV/hyperblog.git : con  esto se agrega un origen remoto de nuestros archivos
+git remote:  con esto nos envia lo que creamos (origin)
+
+git remote -v:sea verval o mas espesifico :nos muestra un 
+origin(para hacer (fetch) para traernos cosas
+y un origin (para hacer (push)) para enviar cosas 
+
+git push origin master :esto quiere decir  git enviele al origen  la rama master 
+git fetch origin master:esto quiere decir git traeme del origen la rama master 
+
+git pull origin master: hace cambios
+
+git pull origin master --allow-unrelated-histories -m"fucion con la master y github":
+esto fuciona lo que tenemos en github con lo que tengo local 
+
+
+git config -l :informacion del usuario en git 
+
+-----------------------------------------------------------------
+como crear un entorno virtual: 
+creamos carpeta con (mkdir : nombre de carpeta)
+creamos un repositorio (git init)
+creamos un modulo py en la carpeta con : (py -m venv venv)
+para crear un alias con (avenv =.\venv\Scripts\activate): 
+esto para iniciar  con avenv el entorno virtual
+
+pip freeze : lo que hace es  mostrarnos que modulos o dependencias
+tenemos instalados en ese entorno virtual
+
+pip install: (pandas) este es el proceso para instalar la dependencia 
+puede ser otro en particular 
+
+en caso de querer compartir el archivo ocupa el usuario receptor
+cuales son los requerientos de dependencias para eso se crea un
+pip freeze > requirements.txt : crea un archivo txt con los requerientos
+
+para instalar las dependencias del archivo recivido es 
+(pip install -r requirements.txt)
